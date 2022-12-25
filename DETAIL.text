@@ -1,0 +1,64 @@
+//CRUD OPERATION::::>>>>>>>
+// Environment Setup for Backend
+// Create Node Server
+// Connect MongoDB Database
+// Create Registration model
+// Create Post Route
+// Create Get Route
+// Create Update Route
+// Create Delete Route
+// MVC folder Structure
+// Middlewear
+
+
+
+// step-1: create a folder with the name crud operation and open the terminal 
+// type npm i then npm i express then npm i mongoose then npm i nodemon then 
+// npm i dotenv
+
+
+// step-2: src folder inside this create 
+// create index.js file and 
+// 1.Models folder and in this folder create model.js file , 
+// 2.Middlewear folder => error.js 
+// 3.routes folder   => user folder ,empolyee folder etc => use.controller.js , empolyee.controller.js
+// outside the src folder ,create a file .env (Environment variable)
+
+// step-3: create a server with the help of express and then connect with mongodb in index.js
+
+// step-4: now create a schema in model.js file after creation ...
+// create a post route in routes folder in user.controller.js (first function )crud operation)
+
+// after this open the postman and check either user is created or not then go to mongodb compass 
+// and check user is created or not 
+
+// step-5: now create get route and you will have to path /:userid ...the userid is unique for all users 
+// now go to postman and in url apply user id from the mongodb compass database and hit enter it will show 
+// user detail 
+
+// step-6: now create update route and its method is patch ...it will also take a userid and we write a name that
+// we want to update in the body of postman then hit enter.you will see below updated result.for confirmation
+// check the database it will updated or not 
+
+// step-7: now create a delete route and its method is delete ...it will also take a userid as we use above 
+// we paste the user id from the database in the url of postman and hit enter.
+// message will display a user deleted as we write this message .for confirmation 
+// check the database 
+
+//step-8 now this time to use middlewear (request-response handler) we will handle error and auth etc
+// go to error.js file and write a code for eror handler 
+
+//step-9 now go to routes folder and open the file user.controller.js and require errorhandler from middleware
+// then you need a file name eg const Router = express.Router
+// in crud operations call errorhandler as a parameter 
+
+step-10 i write validation in schema for input field like 
+name should be unique , length more than 4 and less than 20 ,require 
+etc 
+email should be like email formate , unique , require ,lower case etc
+password : string , required , min length , max length 
+cell :should be number , formated , required, unique 
+
+// Crud + mvc + middleware is done ...!  hey Congratulations dear Developers ..wish you all best. you can join me in the next lesson
+
+
